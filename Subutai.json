@@ -1,26 +1,26 @@
 {
-  "name": "My-Website",
-  "description": "My static website",
+  "name": "BlueFnPrint",
+  "description": "Is that a test with subutai BP",
   "version": "1.0.0",
-  "ssh-key": "my-website",
+  "ssh-key": "debian",
   "author": "https://github.com/akarasulu",
   "containers": [ {
       "hostname": "www",
-      "template": "apache",
+      "template": "debian",
       "peer-criteria": "HTTP-GROUP",
       "size": "SMALL",
       "port-mapping": [
         {
           "protocol": "http",
-          "domain": "mywebsite.envs.subutai.cloud",
+          "domain": "junior.envs.subutai.cloud",
           "internal-port": "80",
           "external-port": "80"
         },
         {
           "protocol": "tcp",
-          "domain": "mywebsite.envs.subutai.cloud",
+          "domain": "junior.envs.subutai.cloud",
           "internal-port": "22",
-          "external-port": "4040"
+          "external-port": "1974"
         }
       ]
     }
@@ -28,7 +28,7 @@
   "peer-criteria": [ 
     {
       "name": "HTTP-GROUP",
-      "max-price": "5",
+      "max-price": "1000",
       "avg-cpu-load": "50",
       "min-free-ram": "128",
       "min-free-disk-space": "10"
